@@ -1,15 +1,11 @@
-a, b = input().split()
-a = int(a)
-b = int(b)
+x= int(input())
+y= int(input())
 
-if a > 0 and b > 0:
+if x > 0 and y > 0 :	# x,y: 양수
     print('1')
-
-elif a < 0 and b > 0:
+elif x < 0 and y > 0 :	# x:음수, y:양수
     print('2')
-
-elif a < 0 and b < 0:
+elif x < 0 and y < 0 :	# x,y: 음수
     print('3')
-
-else : 
+else:
     print('4')
