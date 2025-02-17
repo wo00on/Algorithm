@@ -4,12 +4,12 @@ sum = 0
 
 for _ in range(N):
     a, b = map(int, input().split())  #a가격, b개수
-    sum += (a * b)
+    sum += a * b
 
 if sum == X:
     print('Yes')
 
 else :
-    print("NO")
+    print('NO')
     
 
