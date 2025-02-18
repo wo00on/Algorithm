@@ -1,16 +1,18 @@
-"""N = int(input())
+N = int(input())
 line = list(map(int, input().split()))
-a = map(int, input())
+a = int(input())
+count=0
 
 
-for i in range (line):
+for i in line:
     if a == i:
-        print(i)
+        count+=1
+print(count)
                 
-##############################################"""
+##############################################
+
 N = int(input())
 line = list(map(int, input().split()))
 a = int(input())
 
 print(line.count(a))
-    
