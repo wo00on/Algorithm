@@ -1,12 +1,10 @@
 N, M = map(int, input().split())
-
-line = [0] * N
+basket = [0] * (N+1)
 
 for _ in range(M):
     i, j, k = map(int, input().split())
+    for n in range(i, j+1):
+        basket[n] = k 
 
-    for r in range(i-1, j):
-        line[r] = k
-
-for c in range(line):
-    print(num, end="")
+for i in range(1, N+1):
+    print(basket[i], end = ' ')
